@@ -1,0 +1,144 @@
+html, body{
+	background-image: radial-gradient(#f5f38e , #fffed9 ) ;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+i.carrouselIcon{
+	font-size: 70px;
+    color: black;
+}
+a.carrouselPrevious{
+	margin-left: 170px;
+}
+a.carrouselNext{
+	margin-right: 170px;
+}
+/*barraNav*/
+#logo{
+	width: 100px;
+	transition: transform 1s;
+	height: 100px;
+	border: none;
+	&:hover{
+	transform: rotate(360deg);
+	}
+}
+div.width-100{
+	width: 100%;
+}
+ul.width-50{
+	width: 70%;
+}
+div{
+	&.itemsNav{
+	ul{
+	list-style-type: none;
+	font-size: 20px;
+	font-family: 'Oxygen', sans-serif;
+	}
+	}
+	ul{
+		li{
+			a{
+				border-bottom: none;
+				color: #333333;
+				transition: font-size 1s;
+				&:hover{
+				border-bottom: solid 3px #e3b154;
+				font-size: 23px;
+				color: #333333;
+			}
+			
+			}
+		}
+	}
+}
+/*main*/
+@each $texto in _title,_p,_subtitle{
+	.main_#{$texto}{
+		color:$titulos;
+		font-family: 'Montserrat', sans-serif;
+	}
+}
+
+.main__title{
+    font-size: 3.125rem;
+    font-weight: bolder; 
+}
+.main__p{
+    color: $p-color;
+    font-size: 1.875rem;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 50px;
+}
+.main__subtitle{
+	font-size: 2.5rem;
+}
+/*productos.html*/
+div{
+	img{
+		height: 400px;
+		width: 700px;
+	}
+}
+div.width-500px{
+	width: 500px;
+}
+
+section{
+	div.item{
+		img{
+		border: solid 5px black;
+		width: 300px;
+		height: 300px;
+		transition: height 1s, width 1s, transform 1s;
+		&:hover{
+			height: 350px;
+			width: 350px;
+			transform: rotate(360deg);
+		}
+		
+		}
+	}
+	div.info{
+		padding-left: 80px;
+	}
+}
+/*contacto.html*/
+section{
+	form{
+		width: 350px;
+		margin: 0 auto;
+		 
+	}
+}
+/*franquicias.html*/
+.textoForm{
+	color: #333333;
+	font-size: 1.25rem;
+	font-family: 'Oxygen', sans-serif;
+	line-height: 50px;
+	margin: 0 auto;
+}
+/*footer*/
+footer{
+	bottom: 0;
+	position: relative;
+	width: 100%;
+	.social__p{
+		@extend .main__p;
+		font-size: 1.5rem;
+	}
+	.social__items{
+		text-align: left;
+		list-style-type: none;
+	}
+}
+.absolutFooter{
+		bottom: 0;
+		position: absolute;
+		width: 100%;
+} 
+
+

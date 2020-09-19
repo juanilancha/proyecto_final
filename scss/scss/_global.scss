@@ -4,16 +4,6 @@ html, body{
 	margin: 0;
 	padding: 0;
 }
-i.carrouselIcon{
-	font-size: 70px;
-    color: black;
-}
-a.carrouselPrevious{
-	margin-left: 170px;
-}
-a.carrouselNext{
-	margin-right: 170px;
-}
 /*barraNav*/
 #logo{
 	width: 100px;
@@ -74,6 +64,27 @@ div{
 }
 .main__subtitle{
 	font-size: 2.5rem;
+}
+i.carrouselIcon{
+	font-size: 70px;
+    color: black;
+}
+a.carrouselPrevious{
+	margin-left: 170px;
+}
+a.carrouselNext{
+	margin-right: 170px;
+}
+div.cta{
+	margin-top: 30px;
+}
+button{
+	.btn-golden{
+		background-color: #e3b154;
+	}
+	.button.btn{
+		font-size: 1.5rem;
+	}
 }
 /*productos.html*/
 div{

@@ -84,6 +84,41 @@ button.btn-golden{
 button.btn{
 	font-size: 1.5rem;
 }
+/*presentacion.html*/
+div.presentacion{
+	div{
+		height: 500px;
+		background-color: #fff7d6;
+		width: 500px;
+		a{
+			color: #212529;
+		}
+		@-webkit-keyframes animar{
+			0%{-webkit-transform:translate(0px,0px);}
+			10%{-webkit-transform:translate(20px,0px);}
+			20%{-webkit-transform:translate(0px,0px);}
+			30%{-webkit-transform:translate(20px,0px);}
+			40%{-webkit-transform:translate(0px,0px);}
+			50%{-webkit-transform:translate(20px,0px);}
+			60%{-webkit-transform:translate(0px,0px);}
+			70%{-webkit-transform:translate(20px,0px);}
+			80%{-webkit-transform:translate(0px,0px);}
+			90%{-webkit-transform:translate(20px,0px);}
+			100%{-webkit-transform:translate(0px,0px);}
+		}
+		i{
+			font-size: 80px;
+			padding-top: 40px;
+			&:hover{
+				-webkit-animation:animar .6s 1;
+			}
+		}
+		p{
+			padding-top: 70px;
+			font-size: 20px;
+		}	
+	}
+}
 /*productos.html*/
 div{
 	h2{

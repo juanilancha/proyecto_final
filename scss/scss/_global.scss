@@ -70,10 +70,10 @@ i.carrouselIcon{
     color: black;
 }
 a.carrouselPrevious{
-	margin-left: 170px;
+	margin-left: 130px;
 }
 a.carrouselNext{
-	margin-right: 170px;
+	margin-right: 130px;
 }
 div.cta{
 	margin-top: 30px;
@@ -151,11 +151,15 @@ section{
 			height: 350px;
 			width: 350px;
 		}
-		
+
 		}
 	}
 	div.info{
 		padding-left: 80px;
+		margin-top: 30px;
+		ul{
+			list-style: none;
+		}
 	}
 }
 /*contacto.html*/

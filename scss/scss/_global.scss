@@ -76,6 +76,18 @@ a.carrouselPrevious{
 a.carrouselNext{
 	margin-right: 10px;
 }
+div{
+	ul{
+		li{
+			margin-right: 10px;
+			a{
+				span{
+					font-size: 17px;
+				}
+			}
+		}
+	}
+}
 }
 div.cta{
 	margin-top: 30px;

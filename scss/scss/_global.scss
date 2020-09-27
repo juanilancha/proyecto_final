@@ -65,15 +65,17 @@ div{
 .main__subtitle{
 	font-size: 2.5rem;
 }
+@media (max-width: 992px){
 i.carrouselIcon{
 	font-size: 70px;
     color: black;
 }
 a.carrouselPrevious{
-	margin-left: 130px;
+	margin-left: 10px;
 }
 a.carrouselNext{
-	margin-right: 130px;
+	margin-right: 10px;
+}
 }
 div.cta{
 	margin-top: 30px;

@@ -103,7 +103,7 @@ div.presentacion{
 	div{
 		height: 500px;
 		background-color: #fff7d6;
-		width: 500px;
+		margin: 0 5px;
 		a{
 			color: #212529;
 		}
@@ -131,6 +131,13 @@ div.presentacion{
 			padding-top: 70px;
 			font-size: 20px;
 		}	
+	}
+}
+@media (max-width: 992px){
+	div.presentacion{
+		div{
+			margin: 20px;
+		}
 	}
 }
 /*productos.html*/
@@ -177,10 +184,18 @@ section{
 	}
 }
 /*contacto.html*/
+
 section{
 	form{
 		width: 350px;
 		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		div{
+			&.border-gold{
+				border-color: #e3b154;
+			}
+		}
 		 
 	}
 }

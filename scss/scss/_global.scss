@@ -259,6 +259,11 @@ div{
 .margin-form{
 	margin: 0 500px 0 500px;
 }
+@media(max-width: 992px){
+	.margin-form{
+		margin: 0 200px 0 200px;
+	}
+}
 /*footer*/
 footer{
 	bottom: 0;

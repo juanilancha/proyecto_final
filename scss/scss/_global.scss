@@ -234,6 +234,18 @@ section{
 		 
 	}
 }
+@media (min-width:320px) and (max-width:768px)
+{
+	section{
+		form{
+			div.border-gold{
+				width: 500px;
+				height: 600px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
 div{
 	i.color-gold{
 		color: #e3b154 ;;

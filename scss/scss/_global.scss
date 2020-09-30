@@ -20,6 +20,7 @@ div.width-100{
 ul.width-50{
 	width: 70%;
 }
+@media only screen and (min-width:768px) and (max-width:2000px){
 div{
 	&.itemsNav{
 	ul{
@@ -28,6 +29,20 @@ div{
 	font-family: 'Oxygen', sans-serif;
 	}
 	}
+	}
+}
+	@media (min-width:320px) and (max-width:768px)
+	{
+		div.itemsNav{
+			ul{
+			list-style-type: none;
+			font-size: 30px;
+			font-family: 'Oxygen', sans-serif;
+			}
+			}
+	}
+@media only screen and (min-width:768px) and (max-width:2000px)
+{
 	ul{
 		li{
 			a{
@@ -35,10 +50,11 @@ div{
 				color: #333333;
 				transition: font-size 1s;
 				&:hover{
-				border-bottom: solid 3px #e3b154;
-				font-size: 23px;
-				color: #333333;
-			}
+					border-bottom: solid 3px #e3b154;
+					font-size: 23px;
+					color: #333333;
+				}
+			
 			
 			}
 		}
@@ -64,6 +80,12 @@ div{
 }
 .main__subtitle{
 	font-size: 2.5rem;
+}
+@media (min-width:320px) and (max-width:768px)
+{
+	div.carousel{
+		margin-left: 60px;
+	}
 }
 @media (max-width: 992px){
 i.carrouselIcon{
@@ -282,4 +304,12 @@ footer{
 		bottom: 0;
 		position: absolute;
 		width: 100%;
+}
+@media only (min-width:768px)
+{
+	footer.absolutFooter-md{
+		bottom: 0;
+		position: absolute;
+		width: 100%;
+	}
 }

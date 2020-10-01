@@ -83,7 +83,7 @@ div{
 }
 @media (min-width:320px) and (max-width:768px)
 {
-	div.carousel{
+	div.carrousel{
 		margin-left: 60px;
 	}
 }
@@ -244,10 +244,10 @@ section{
 			img{
 			width: 600px;
 			height: 400px;
-			transition: height 1s, width 1s, transform 1s;
 			&:hover{
-				height: 350px;
-				width: 350px;
+				-webkit-animation:animar .6s 1;
+				width: 600px;
+				height: 400px;
 			}
 
 			}
@@ -343,7 +343,7 @@ div{
 .margin-form{
 	margin: 0 500px 0 500px;
 }
-@media(max-width: 992px){
+@media(max-width: 1400px){
 	.margin-form{
 		margin: 0 200px 0 200px;
 	}

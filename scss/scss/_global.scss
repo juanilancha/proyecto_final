@@ -17,9 +17,6 @@ html, body{
 div.width-100{
 	width: 100%;
 }
-ul.width-50{
-	width: 70%;
-}
 @media only screen and (min-width:768px) and (max-width:2000px){
 div{
 	&.itemsNav{
@@ -31,19 +28,35 @@ div{
 	}
 	}
 }
-	@media (min-width:320px) and (max-width:768px)
+i.carrouselIcon{
+	font-size: 70px;
+    color: black;
+}
+a.carrouselPrevious{
+	margin-left: 170px;
+}
+a.carrouselNext{
+	margin-right: 170px;
+}
+	@media (min-width:320px) and (max-width:800px)
 	{
 		div.itemsNav{
 			ul{
 			list-style-type: none;
-			font-size: 30px;
+			font-size: 25px;
 			font-family: 'Oxygen', sans-serif;
+			li{
+				a{
+					color: #333333;
+				}
 			}
 			}
+		}
 	}
-@media only screen and (min-width:768px) and (max-width:2000px)
+@media only screen and (min-width:800px) and (max-width:2000px)
 {
 	ul{
+		width: 70%;
 		li{
 			a{
 				border-bottom: none;
@@ -60,6 +73,10 @@ div{
 		}
 	}
 }
+
+	
+	
+
 /*main*/
 @each $texto in _title,_p,_subtitle{
 	.main_#{$texto}{
@@ -172,6 +189,7 @@ div{
 	img{
 		height: 400px;
 		width: 700px;
+		cursor: pointer;
 	}
 }
 div.width-500px{
@@ -346,6 +364,19 @@ div{
 @media(max-width: 1400px){
 	.margin-form{
 		margin: 0 200px 0 200px;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+	div{
+		input.input-height{
+			height: 70px;
+		}
+	}
+	button.btn-golden{
+		height: 70px;
+	}
+	select.custom-select{
+		height: 70px;
 	}
 }
 /*footer*/

@@ -98,10 +98,11 @@ a.carrouselNext{
 .main__subtitle{
 	font-size: 2.5rem;
 }
-@media (min-width:320px) and (max-width:768px)
+@media (min-width:320px) and (max-width:800px)
 {
 	div.carrousel{
 		margin-left: 60px;
+		margin-right: 60px;
 	}
 }
 @media (max-width: 1440px){
@@ -115,7 +116,7 @@ a.carrouselPrevious{
 a.carrouselNext{
 	margin-right: 10px;
 }
-div{
+div.itemsNav{
 	ul{
 		li{
 			margin-right: 30px;
@@ -233,6 +234,7 @@ section{
 		margin-top: 30px;
 		ul{
 			list-style: none;
+			width: 100%;
 		}
 	}
 }
@@ -289,10 +291,11 @@ section{
 		 
 	}
 }
-@media only screen and (min-width:768px) and (max-width:1024px)
+@media only screen and (max-width:800px)
 {
 	section{
 		form{
+			margin-right: 280px;
 			div.border-gold{
 				width: 500px;
 				height: 700px;
@@ -379,6 +382,13 @@ div{
 		height: 70px;
 	}
 }
+@media (max-width:800px){
+	.margin-form-md{
+		margin-left: 150px;
+    	margin-right: 150px;
+	}
+
+}
 /*footer*/
 footer{
 	bottom: 0;
@@ -391,6 +401,9 @@ footer{
 	.social__items{
 		text-align: left;
 		list-style-type: none;
+	}
+	div.social{
+		width: 200px;
 	}
 }
 .absolutFooter{

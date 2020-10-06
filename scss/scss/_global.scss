@@ -18,15 +18,22 @@ div.width-100{
 	width: 100%;
 }
 @media only screen and (min-width:768px) and (max-width:2000px){
-div{
-	&.itemsNav{
-	ul{
-	list-style-type: none;
-	font-size: 20px;
-	font-family: 'Oxygen', sans-serif;
+	div{
+		&.itemsNav{
+			z-index: 1000;
+			ul{
+			list-style-type: none;
+			font-size: 20px;
+			font-family: 'Oxygen', sans-serif;
+			padding-top: 10px;
+			}
+			
+		}
+		div.menu-bar{
+			display: none;
+		}
 	}
-	}
-	}
+	
 }
 i.carrouselIcon{
 	font-size: 70px;
@@ -40,7 +47,22 @@ a.carrouselNext{
 }
 	@media (min-width:320px) and (max-width:800px)
 	{
+		div.menu-bar{
+			width: 100%;
+			a.bt-menu{
+				display: block;
+				font-size: 25px;
+				-webkit-box-sizing: border-box;
+				float: right;
+				font-size: 40px;
+			}
+		}
 		div.itemsNav{
+			width: 80%;
+			height: 100%;
+			margin: 0;
+			z-index: 1000;
+			left: -100%;
 			ul{
 			list-style-type: none;
 			font-size: 25px;
@@ -48,6 +70,9 @@ a.carrouselNext{
 			li{
 				a{
 					color: #333333;
+					i{
+						margin: 3px;
+					}
 				}
 			}
 			}
@@ -247,6 +272,7 @@ section{
 			}
 			div.left-margin-md{
 				margin-left: 130px;
+
 				table{
 					margin-left: 130px;
 					li{

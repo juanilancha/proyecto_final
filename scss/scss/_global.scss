@@ -12,7 +12,11 @@ html, body{
 	border: none;
 	&:hover{
 	transform: rotate(360deg);
-	}
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
 }
 div.width-100{
 	width: 100%;
@@ -190,10 +194,20 @@ button.btn{
 }
 /*presentacion.html*/
 div.presentacion{
-	div{
+	div.cards{
 		height: 500px;
-		background-color: #fff7d6;
+		background-image: linear-gradient(#d6a62b , #ff8ae9);
+		border-radius: 75px 0 75px 0;
 		margin: 0 5px;
+		transition: background-image 4s;
+		-webkit-transition: background-image 4s;
+		-moz-transition: background-image 4s;
+		-ms-transition: background-image 4s;
+		-o-transition: background-image 4s;
+		&:hover{
+			-webkit-animation:animar .6s 1;
+			background-image: linear-gradient(#ff8ae9 , #d6a62b);
+		}
 		a{
 			color: #212529;
 		}
@@ -223,17 +237,26 @@ div.presentacion{
 		}	
 	}
 }
-@media (max-width: 992px){
+@media (max-width: 1280px){
 	div.presentacion{
-		div{
+		div.cards{
 			margin: 20px;
 		}
 	}
 }
 @media(max-width:500px){
 	div.presentacion{
-		div{
+		div.cards{
 			width: 100%;
+			height: 400px;
+    		margin: 20px 0;
+			div.w-100{
+				p{
+					span.sm-text{
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }
@@ -254,9 +277,13 @@ div.img-container{
 		img{
 			border-radius: 40px;
 			transition: all 0.3s ease-out;
+			filter: grayscale(60%);
+			-webkit-filter: grayscale(60%);
 			&:hover{
 				cursor: pointer;
 				transform: scale(1.2, 1.2);
+				filter: none;
+				-webkit-filter: none;
 			}
 		}
 		margin-bottom: 30px;
@@ -272,9 +299,18 @@ div.row{
 
 @media(max-width:800px){
 	div.item{
+		height: 400px;
 		img{
 			width: 100%;
-			height: 300px;
+			height: 100%;
+		}
+	}
+}
+@media(max-width: 500px){
+	div.item{
+		height: 250px;
+		img{
+			height: 100%;
 		}
 	}
 }

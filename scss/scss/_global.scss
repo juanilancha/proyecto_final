@@ -1,5 +1,5 @@
 html, body{
-	background-image: radial-gradient(#f5f38e , #fffed9 ) ;
+	background-image: radial-gradient(#ffdd33 , #fffed9 ) ;
 	text-align: center;
 	margin: 0;
 	padding: 0;
@@ -379,73 +379,27 @@ div{
 	}
 }
 /*franquicias.html*/
-.textoForm{
-	color: #333333;
-	font-size: 1.25rem;
-	font-family: 'Oxygen', sans-serif;
-	line-height: 50px;
-	margin: 0 auto;
+div.franquicias-title{
+	width: 100%;
 }
-.divider-text {
-    position: relative;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.divider-text span {
-    padding: 7px;
-    font-size: 12px;
-    position: relative;   
-    z-index: 2;
-}
-.divider-text:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    border-bottom: 1px solid #ddd;
-    top: 55%;
-    left: 0;
-    z-index: 1;
-}
-
-.btn-facebook {
-    background-color: #405D9D;
-    color: #fff;
-}
-.btn-twitter {
-    background-color: #42AEEC;
-    color: #fff;
-}
-.margin-form{
-	margin: 0 500px 0 500px;
-}
-@media(max-width: 1400px){
-	.margin-form{
-		margin: 0 200px 0 200px;
+section{
+	iframe{
+		width:  100%;
 	}
 }
-@media only screen and (min-width:768px) and (max-width:1024px){
-	div{
-		input.input-height{
-			height: 70px;
+@media(min-width:900px){
+	section{
+		iframe{
+			width:  800px;
 		}
 	}
-	button.btn-golden{
-		height: 70px;
-	}
-	select.custom-select{
-		height: 70px;
-	}
 }
-@media (max-width:800px){
-	.margin-form-md{
-		margin-left: 150px;
-    	margin-right: 150px;
+@media(min-width:700px){
+	section{
+		iframe{
+			width:  600px;
+		}
 	}
-
-}
-@media (max-width:500px){
-	
 }
 /*footer*/
 footer{
@@ -469,7 +423,7 @@ footer{
 		position: absolute;
 		width: 100%;
 }
-@media only (min-width:768px)
+@media(min-width:768px)
 {
 	footer.absolutFooter-md{
 		bottom: 0;
